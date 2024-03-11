@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title> LAB 1 </title>
+<meta name="generator" content="Jekyll v3.7.3">
+<meta property="og:title" content="Genady Maryash, Hunter College">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://maryash.github.io/">
+<meta property="og:url" content="https://maryash.github.io/">
+<meta property="og:site_name" content="maryash.github.io">
+<script type="application/ld+json">
+{"name":"maryash.github.io","@type":"WebSite","url":"https://maryash.github.io/","headline":"Genady Maryash, Hunter College","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <style class="anchorjs"></style><link href="Lab%201_files/css.css" rel="stylesheet"> 
+
+    <!-- MathJax -->
+    <script type="text/javascript" async="" src="Lab%201_files/MathJax.js">
+    </script>
+
+<!--   <link crossorigin="anonymous" media="all" integrity="sha512-Z0JAar9+DkI1NjGVdZr3GivARUgJtA0o2eHlTv7Ou2gshR5awWVf8QGsq11Ns9ZxQLEs+G5/SuARmvpOLMzulw==" rel="stylesheet" href="https://assets-cdn.github.com/assets/frameworks-95aff0b550d3fe338b645a4deebdcb1b.css" />
+    --> 
+<!--   <link crossorigin="anonymous" media="all" integrity="sha512-yv+kWn8ewbavFKfvLZifQplJ0chJ6H894rDwGVvn0LtaG80VxAQmPt8pRMMOSlGNSiPwZEDSVzZjyOOiVe0eyA==" rel="stylesheet" href="https://assets-cdn.github.com/assets/github-37504d684728c80db863d719b4ac6781.css" />
+    --> 
+<link rel="stylesheet" href="Lab%201_files/style.css">
+  <style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+  <body><div id="MathJax_Message" style="display: none;"></div>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1 id="lab-1-introduction-to-linux-and-c">Lab 1. Introduction to Linux and C++.</h1>
+
+<p><em><strong>Making sure that all have Gradescope invite (and resend 
+to the ones that do not using their EMPLID and email that they actually 
+use), and have everyone create their Gradescope account.</strong></em></p>
+
+<h2 id="review-of-some-unix-terminal-commands-from-csci127">Review of some Unix terminal commands from CSCI127.<a class="anchorjs-link " href="#review-of-some-unix-terminal-commands-from-csci127" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p><img src="Lab%201_files/fEoNjnW.jpg" alt="[Linux shell illustration]" class="centered"></p>
+
+<p>You need to know just a few commands to work comfortably in a Unix terminal:    <br>
+<strong><code class="language-plaintext highlighter-rouge">ls</code></strong>, <strong><code class="language-plaintext highlighter-rouge">cd</code></strong>, <strong><code class="language-plaintext highlighter-rouge">pwd</code></strong>, <strong><code class="language-plaintext highlighter-rouge">mkdir</code></strong>, <strong><code class="language-plaintext highlighter-rouge">cp</code></strong>, <strong><code class="language-plaintext highlighter-rouge">mv</code></strong>, <strong><code class="language-plaintext highlighter-rouge">rm</code></strong>.</p>
+
+<p>A brief summary:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">pwd</code>  </td>
+      <td>print the current working directory</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ls</code>  </td>
+      <td>list files in the current directory</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ls path/to/a/directory</code>  </td>
+      <td>list files in the directory</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cd path/to/a/directory</code>  </td>
+      <td>change directory</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cd ..</code>  </td>
+      <td>go to the parent directory (one level up)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">mkdir newdirectoryname</code></td>
+      <td>create new directory</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cp file1 file2</code>  </td>
+      <td>copy <code class="language-plaintext highlighter-rouge">file1</code> and call the copy <code class="language-plaintext highlighter-rouge">file2</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">mv file1 file2</code>  </td>
+      <td>rename (move) <code class="language-plaintext highlighter-rouge">file1</code> to <code class="language-plaintext highlighter-rouge">file2</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">rmdir directoryname</code>  </td>
+      <td>remove empty directory</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">rm file</code>  </td>
+      <td>remove <code class="language-plaintext highlighter-rouge">file</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>These are some useful directory shortcuts:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">.</code> &nbsp;</td>
+      <td>the current directory</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">..</code> &nbsp;</td>
+      <td>the parent directory of the current</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">~</code> &nbsp;</td>
+      <td>the home directory</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>And these additional unix commands:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">touch newfilename</code>  </td>
+      <td>create new file</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">chmod &lt;options&gt; file</code>  </td>
+      <td>change file permissions (read <code class="language-plaintext highlighter-rouge">+r</code>, write <code class="language-plaintext highlighter-rouge">+w</code>, execute <code class="language-plaintext highlighter-rouge">+x</code>)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">man command</code>  </td>
+      <td>documentation about the <code class="language-plaintext highlighter-rouge">command</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Also read this article and watch its videos:</strong>    <br>
+  <a href="http://lifehacker.com/5743814/become-a-command-line-ninja-with-these-time-saving-shortcuts">Become a Command Line Ninja With These Time-Saving Shortcuts</a></p>
+
+<p>Try this <a href="http://www.ee.surrey.ac.uk/Teaching/Unix/unix1.html">Unix tutorial</a> for more information.</p>
+
+<h2 id="compiling-c-code-with-g">Compiling C++ code with <code class="language-plaintext highlighter-rouge">g++</code>.<a class="anchorjs-link " href="#compiling-c-code-with-g" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>First, get acquainted with the <code class="language-plaintext highlighter-rouge">gedit</code> Text Editor, which you will be using to write your C++ programs.</p>
+
+<p>Now, lets set the default tab width on your Text Editor to <code class="language-plaintext highlighter-rouge">3</code>.  Once you open it, click on <code class="language-plaintext highlighter-rouge">Text Editor</code> in the upper left corner of the screen and select <code class="language-plaintext highlighter-rouge">Preferences</code> from the drop down menu.  Click the <code class="language-plaintext highlighter-rouge">Editor</code> tab and set <code class="language-plaintext highlighter-rouge">Tab width</code> to <code class="language-plaintext highlighter-rouge">3</code>.  Done!</p>
+
+<p>Regarding coding style: remember that it is of paramount importance 
+that all of your code is correctly indented.  You must always use tabs 
+to indent lines of code.  Never use spaces to indent!  In addition to 
+automatic grading by Gradescope, we will spot check your code manually 
+and will reduce your grade, if the indentation is not correct or if 
+spaces are used instead of tabs.</p>
+
+<p>Consider the following program that asks for your current age and
+prints it on the screen:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;iostream&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Enter your age: "</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+	<span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">age</span><span class="p">;</span>
+	<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Your age is "</span> <span class="o">&lt;&lt;</span> <span class="n">age</span> <span class="o">&lt;&lt;</span> <span class="s">"."</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>To compile program <code class="language-plaintext highlighter-rouge">code.cpp</code> and call the executable <code class="language-plaintext highlighter-rouge">myprog</code>, type in the terminal:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>g++ -o myprog code.cpp
+</code></pre></div></div>
+
+<p>To run the produced compiled program:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./myprog
+</code></pre></div></div>
+
+<p>Alternatively, if you compile the program without giving the output file name (such as <code class="language-plaintext highlighter-rouge">-o myprog</code>), the
+executable file will be called <code class="language-plaintext highlighter-rouge">a.out</code>, which you can execute the same way:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./a.out
+</code></pre></div></div>
+
+<h3 id="how-to-compile-and-run-programs-on-your-own-computer">How to compile and run programs on your own computer?<a class="anchorjs-link " href="#how-to-compile-and-run-programs-on-your-own-computer" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>There are three components you should make sure you have installed:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">g++</code> compiler,</li>
+  <li>a functioning terminal application, and</li>
+  <li>a good plain text editor (Gedit, Emacs, Vim, or Sublime Text) to write programs.</li>
+</ul>
+
+<p>If your computer OS is Linux or Mac OS, you already have everything!  If it is Windows, please follow this excellent tutorial: <a href="https://okunhardt.github.io/documents/Installing_WSL.pdf">Linux on Windows Tutorial</a>
+ . 
+OSX. You already have everything. It may come with g++ pre-installed. If
+ you have it setup, this is all you need for most of the course.</p>
+
+<h2 id="how-to-submit-your-programs">How to submit your programs.<a class="anchorjs-link " href="#how-to-submit-your-programs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<h3 id="each-program-should-be-submitted-through-gradescope">Each program should be submitted through Gradescope.<a class="anchorjs-link " href="#each-program-should-be-submitted-through-gradescope" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>Write separate programs for each part of the assignment.  <br>
+Submit only the source code <code class="language-plaintext highlighter-rouge">.cpp</code> files, not the compiled executables.  <br>
+Each program should start with a comment that contains your name and a short program description, for example:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/*
+Author: your name
+Course: CSCI-136
+Instructor: their name
+Assignment: title, e.g., Lab1A
+
+Here, briefly, at least in one or a few sentences
+describe what the program does.
+*/</span>
+</code></pre></div></div>
+
+<h2 id="task-a-find-the-smaller-of-two-integers">Task A. Find the smaller of two integers.<a class="anchorjs-link " href="#task-a-find-the-smaller-of-two-integers" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p><img src="Lab%201_files/FzG71JC.jpg" alt="[two cats illustration]" class="centered"></p>
+
+<p>Write a program <code class="language-plaintext highlighter-rouge">smaller.cpp</code> that asks the user to input <strong>two integer numbers</strong> and prints out the smaller of the two.</p>
+
+<h3 id="example">Example<a class="anchorjs-link " href="#example" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./smaller
+Enter the first number: 15
+Enter the second number: -24
+
+The smaller of the two is -24
+</code></pre></div></div>
+
+<h2 id="task-b-find-the-smaller-of-three-integers">Task B. Find the smaller of three integers.<a class="anchorjs-link " href="#task-b-find-the-smaller-of-three-integers" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p><img src="Lab%201_files/3EJLfnP.jpg" alt="[three cats illustration]" class="centered"></p>
+
+<p>Write a program <code class="language-plaintext highlighter-rouge">smaller3.cpp</code> that asks the user to input <strong>three integer numbers</strong>, and prints out the smallest of the three.</p>
+
+<p>(Hint: There are many possible solutions here. One possible strategy: Given numbers <code class="language-plaintext highlighter-rouge">x</code>, <code class="language-plaintext highlighter-rouge">y</code>, and <code class="language-plaintext highlighter-rouge">z</code>, you can first compare <code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">y</code>,
+take whichever is smaller and compare it with <code class="language-plaintext highlighter-rouge">z</code>.)</p>
+
+<h3 id="example-1">Example<a class="anchorjs-link " href="#example-1" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./smaller3
+Enter the first number: 23
+Enter the second number: 76
+Enter the third number: 37
+
+The smaller of the three is 23
+</code></pre></div></div>
+
+<h2 id="task-c-a-leap-year-or-a-common-year">Task C. A leap year or a common year?<a class="anchorjs-link " href="#task-c-a-leap-year-or-a-common-year" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<h3 id="introducing-the-modulo-operator-">Introducing the modulo operator <code class="language-plaintext highlighter-rouge">%</code><a class="anchorjs-link " href="#introducing-the-modulo-operator-" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>In C++, operator <code class="language-plaintext highlighter-rouge">%</code> computes the remainder of the division of <code class="language-plaintext highlighter-rouge">x</code> by <code class="language-plaintext highlighter-rouge">y</code>.
+For example, <code class="language-plaintext highlighter-rouge">37 % 10</code> returns <code class="language-plaintext highlighter-rouge">7</code>, because this is the remainder of <code class="language-plaintext highlighter-rouge">37</code> when divided by <code class="language-plaintext highlighter-rouge">10</code>.</p>
+
+<h3 id="the-task">The task<a class="anchorjs-link " href="#the-task" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>Write a program <code class="language-plaintext highlighter-rouge">leap.cpp</code> that asks the user to input an integer representing a year number (1999, 2016, etc.).
+If the input year is a <em>leap year</em> according to the modern Gregorian calendar, it should print <code class="language-plaintext highlighter-rouge">Leap year</code>, otherwise, print <code class="language-plaintext highlighter-rouge">Common year</code>.</p>
+
+<p>In the <strong>modern Gregorian calendar</strong>, a year is a <em>leap year</em> if it is divisible by 4, but century years are not leap years unless they are divisible by 400. Here is the pseudocode:</p>
+<blockquote>
+  <p><strong>if</strong> (year is not divisible by 4) <strong>then</strong> (it is a common year) <br>
+<strong>else if</strong> (year is not divisible by 100) <strong>then</strong> (it is a leap year) <br>
+<strong>else if</strong> (year is not divisible by 400) <strong>then</strong> (it is a common year) <br>
+<strong>else</strong> (it is a leap year)</p>
+</blockquote>
+
+<p>This means that 2012, 2016, 2020, and 2040 are all leap years.<br>
+However, the century years 1800, 1900, 2100, 2200, 2300 and 2500 are NOT.<br>
+Yet, 2000, 2400, 2800 are still leap years.</p>
+
+<h3 id="example-1">Example 1<a class="anchorjs-link " href="#example-1" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./leap
+Enter year: 2016
+
+Leap year
+</code></pre></div></div>
+
+<h3 id="example-2">Example 2<a class="anchorjs-link " href="#example-2" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./leap
+Enter year: 2017
+
+Common year
+</code></pre></div></div>
+
+<h2 id="task-d-number-of-days-in-a-given-month">Task D. Number of days in a given month<a class="anchorjs-link " href="#task-d-number-of-days-in-a-given-month" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p><img src="Lab%201_files/tTN6shb.jpg" alt="" class="centered"></p>
+
+<p>Write a program <code class="language-plaintext highlighter-rouge">month.cpp</code>
+ that asks the user to input the year and the month (1-12) and prints 
+the number of days in that month (taking into account leap years).
+You may not use <code class="language-plaintext highlighter-rouge">switch case</code> or arrays even if you know these language constructs.</p>
+
+<h3 id="example-2">Example<a class="anchorjs-link " href="#example-2" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./month
+Enter year: 2017
+Enter month: 5
+
+31 days
+</code></pre></div></div>
+
+<p><br>
+<br></p>
+
+<p><img src="Lab%201_files/YG2e5kF.jpg" alt="" class="centered"></p>
+
+      
+    </div>
+    <script src="Lab%201_files/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+    
+  
+
+</body></html>

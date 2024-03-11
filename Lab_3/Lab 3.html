@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title> LAB 3 </title>
+<meta name="generator" content="Jekyll v3.7.3">
+<meta property="og:title" content="Genady Maryash, Hunter College">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://maryash.github.io/">
+<meta property="og:url" content="https://maryash.github.io/">
+<meta property="og:site_name" content="maryash.github.io">
+<script type="application/ld+json">
+{"name":"maryash.github.io","@type":"WebSite","url":"https://maryash.github.io/","headline":"Genady Maryash, Hunter College","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <style class="anchorjs"></style><link href="Lab%203_files/css.css" rel="stylesheet"> 
+
+    <!-- MathJax -->
+    <script type="text/javascript" async="" src="Lab%203_files/MathJax.js">
+    </script>
+
+<!--   <link crossorigin="anonymous" media="all" integrity="sha512-Z0JAar9+DkI1NjGVdZr3GivARUgJtA0o2eHlTv7Ou2gshR5awWVf8QGsq11Ns9ZxQLEs+G5/SuARmvpOLMzulw==" rel="stylesheet" href="https://assets-cdn.github.com/assets/frameworks-95aff0b550d3fe338b645a4deebdcb1b.css" />
+    --> 
+<!--   <link crossorigin="anonymous" media="all" integrity="sha512-yv+kWn8ewbavFKfvLZifQplJ0chJ6H894rDwGVvn0LtaG80VxAQmPt8pRMMOSlGNSiPwZEDSVzZjyOOiVe0eyA==" rel="stylesheet" href="https://assets-cdn.github.com/assets/github-37504d684728c80db863d719b4ac6781.css" />
+    --> 
+<link rel="stylesheet" href="Lab%203_files/style.css">
+  <style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+  <body><div id="MathJax_Message" style="display: none;"></div>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1 id="lab-3-file-io-and-data-processing">Lab 3. File I/O and Data Processing</h1>
+
+<p><img src="Lab%203_files/u51pFWF.jpg" alt="[Ashokan Reservoir Illustration]" class="centered"></p>
+
+<h2 id="ashokan-reservoir">Ashokan Reservoir<a class="anchorjs-link " href="#ashokan-reservoir" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>Located in Ulster County, about 13 miles west of Kingston and 73 miles north of New York City. 
+Formed by the damming of the Esopus Creek, which eventually flows northeast and drains into the Hudson River. 
+Consisting of <strong>two basins</strong> separated by a concrete dividing weir and roadway, it <strong>holds 122.9 billion gallons</strong> 
+at full capacity and was placed into service in 1915.</p>
+
+<p><a href="http://www.nyc.gov/html/dep/html/watershed_protection/ashokan.shtml" target="_blank">The Ashokan</a>
+ is one of two reservoirs in the City’s Catskill Water Supply System. 
+The other is the Schoharie, located 27 miles to the north, whose water 
+flows into the Ashokan via the Shandaken Tunnel and the Esopus Creek. 
+Including the water it receives from the Schoharie Reservoir, the 
+Ashokan supplies about <strong>40% of New York City’s daily drinking water</strong> needs in non-drought periods.</p>
+
+<h2 id="data-on-ashokan-water-levels">Data on Ashokan water levels<a class="anchorjs-link " href="#data-on-ashokan-water-levels" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p>In this lab, we will be studying the Ashokan water levels for the year 2018. It is available from <em>NYC Open Data</em>. 
+Please follow these instructions to download the dataset:</p>
+
+<ol>
+  <li>Follow the link NYC Open Data <a href="https://data.cityofnewyork.us/Environment/Current-Reservoir-Levels/zkky-n5j3" target="_blank">Current Reservoir Levels</a>.</li>
+  <li>Choose the <strong>View Data</strong> menu option (it will reload the page).
+  <img src="Lab%203_files/bj2uhhb.png" alt="[Illustration]" class="centered"></li>
+  <li>Filter data including only the year 2018. To do that:
+    <ul>
+      <li>Click the blue button <strong>Filter</strong></li>
+      <li>In its submenu <strong>Filter</strong>, click <strong>Add a New Filter Condition</strong></li>
+      <li>Choose <strong>Date is between</strong> <code class="language-plaintext highlighter-rouge">January 1, 2018</code> and <code class="language-plaintext highlighter-rouge">December 31, 2018</code>
+  <img src="Lab%203_files/pic_0301.png" alt="[Illustration]" class="centered"></li>
+    </ul>
+  </li>
+  <li>Sort entries <em>by Date</em> in the <em>Ascending</em> order.</li>
+  <li>Export the data:
+    <ul>
+      <li>Click the light blue button <strong>Export</strong></li>
+      <li>Choose <strong>TSV for Excel</strong> (it will produce a plain text data file in <em>tab-separated values</em> format).</li>
+      <li>Save obtained file <code class="language-plaintext highlighter-rouge">Current_Reservoir_Levels.tsv</code> on your hard drive.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="data-format">Data format<a class="anchorjs-link " href="#data-format" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p><strong>Don’t open the datafile in Excel (that can mess up its formatting)</strong>. Instead, you can open it with your text editor (gedit).</p>
+
+<p>The datafile is a plain text file whose first line is a header followed by rows of data.
+The entries in each row are separated by the <em>tab</em> symbol, hence the name of the file format: <em>TSV</em> (tab-separated-values).
+It is the most convenient format for reading by our C++ program.</p>
+
+<p>Each row has five fields: <em>Date</em>, <em>Storage</em> (in billions of gallons) and <em>Elevation</em> (in feet) for the East basin and for the West basin of the reservoir:</p>
+
+<pre style="font-size:80%;">Date             EastStorage    EastElevation    WestStorage    WestElevation
+01/01/2018          59.94           574             32.67           574.33
+01/02/2018          59.89           573.99          32.57           574.29
+01/03/2018          59.89           573.97          32.44           574.24
+01/04/2018          59.9            573.97          32.22           574.07
+...
+</pre>
+
+<p>To read the datafile, we have to open an <strong>input file stream</strong> (represented by an object of type <code class="language-plaintext highlighter-rouge">ifstream</code>, here we called it <code class="language-plaintext highlighter-rouge">fin</code>):</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ifstream</span> <span class="nf">fin</span><span class="p">(</span><span class="s">"Current_Reservoir_Levels.tsv"</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">fin</span><span class="p">.</span><span class="n">fail</span><span class="p">())</span> <span class="p">{</span>
+    <span class="n">cerr</span> <span class="o">&lt;&lt;</span> <span class="s">"File cannot be opened for reading."</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span> <span class="c1">// exit if failed to open the file</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Remember that the first line in the file is a header line. We have to skip it before we get to process the actual data. 
+We can do that by reading that line into a temporary variable that we can call <code class="language-plaintext highlighter-rouge">junk</code>:</p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">string</span> <span class="n">junk</span><span class="p">;</span>        <span class="c1">// new string variable</span>
+<span class="n">getline</span><span class="p">(</span><span class="n">fin</span><span class="p">,</span> <span class="n">junk</span><span class="p">);</span> <span class="c1">// read one line from the file </span>
+</code></pre></div></div>
+<p>After that, the file can be read line by line. The most idiomatic C++
+ way to read such well-formatted file until the end would be the 
+following:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">while</span><span class="p">(</span><span class="n">fin</span> <span class="o">&gt;&gt;</span> <span class="n">date</span> <span class="o">&gt;&gt;</span> <span class="n">eastSt</span> <span class="o">&gt;&gt;</span> <span class="n">eastEl</span> <span class="o">&gt;&gt;</span> <span class="n">westSt</span> <span class="o">&gt;&gt;</span> <span class="n">westEl</span><span class="p">)</span> <span class="p">{</span> 
+    <span class="c1">// this loop reads the file line-by-line</span>
+    <span class="c1">// extracting 5 values on each iteration </span>
+    
+    <span class="n">fin</span><span class="p">.</span><span class="n">ignore</span><span class="p">(</span><span class="n">INT_MAX</span><span class="p">,</span> <span class="sc">'\n'</span><span class="p">);</span> <span class="c1">//skips to the end of line, </span>
+                          <span class="c1">//ignorring the remaining columns </span>
+
+    <span class="c1">// for example, to print the date and East basin storage:</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">date</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span> <span class="o">&lt;&lt;</span> <span class="n">eastSt</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Here, variable <code class="language-plaintext highlighter-rouge">date</code> can be of type <code class="language-plaintext highlighter-rouge">string</code>, and the others are numeric variables of type <code class="language-plaintext highlighter-rouge">double</code>
+extracting the storage and elevation in East and West basins.</p>
+
+<p>After you are done reading the file, close the stream:</p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fin</span><span class="p">.</span><span class="n">close</span><span class="p">();</span>
+</code></pre></div></div>
+<h3 id="need-to-include-additional-header-files">Need to include additional header files<a class="anchorjs-link " href="#need-to-include-additional-header-files" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<p>The above code is using a new function <code class="language-plaintext highlighter-rouge">exit</code> and a stream class <code class="language-plaintext highlighter-rouge">ifstream</code>. To make them work,
+we have to include two new <strong>headers</strong> at the beginning of the program:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;fstream&gt;
+#include &lt;cstdlib&gt;
+#include &lt;climits&gt;
+</span></code></pre></div></div>
+
+<h2 id="task-a">Task A<a class="anchorjs-link " href="#task-a" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>Write a program <code class="language-plaintext highlighter-rouge">east-storage.cpp</code> that asks the user to input a <strong>string</strong> representing the date (in MM/DD/YYYY format), 
+and prints out the <strong>East basin storage</strong> on that day.</p>
+
+<h3 id="example">Example<a class="anchorjs-link " href="#example" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./east-storage
+Enter date: 05/20/2018
+East basin storage: 80.96 billion gallons
+</code></pre></div></div>
+
+<h2 id="task-b-minimum-and-maximum-storage-in-2018">Task B. Minimum and maximum storage in 2018<a class="anchorjs-link " href="#task-b-minimum-and-maximum-storage-in-2018" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>Write a program <code class="language-plaintext highlighter-rouge">minmax.cpp</code> that finds the minimum and maximum storage in East basin in 2018.</p>
+
+<h3 id="example-using-made-up-numbers">Example (using made up numbers):<a class="anchorjs-link " href="#example-using-made-up-numbers" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./minmax
+minimum storage in East basin: 59.88 billion gallons
+MAXimum storage in East basin: 81.07 billion gallons
+</code></pre></div></div>
+
+<h3 id="hint">Hint:<a class="anchorjs-link " href="#hint" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<p>The program should read the file line by line, while keeping track of
+ what is the highest and the lowest storage level in the basin so far.
+In the end, after reading the entire file, the found values will be the 
+minimum and the maximum storage levels for the entire year.</p>
+
+<h2 id="task-c-comparing-elevations">Task C. Comparing elevations<a class="anchorjs-link " href="#task-c-comparing-elevations" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>Write a program <code class="language-plaintext highlighter-rouge">compare.cpp</code> that asks the user to input two dates (the beginning and the end of the interval).
+The program should check each day in the interval and report <strong>which basin had higher elevation</strong> on that day
+by printing “<strong>East</strong>” or “<strong>West</strong>”, or print “<strong>Equal</strong>” if both basins are at the same level.</p>
+
+<h3 id="example-1">Example:<a class="anchorjs-link " href="#example-1" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./compare
+Enter starting date: 09/13/2018
+Enter ending date: 09/17/2018
+
+09/13/2018 West
+09/14/2018 West
+09/15/2018 West
+09/16/2018 West
+09/17/2018 West
+</code></pre></div></div>
+
+<h3 id="explanation">Explanation:<a class="anchorjs-link " href="#explanation" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<style type="text/css">
+table{border-collapse: collapse;}
+th{ padding-left: 2em; padding-right:2em; border-bottom:1px solid #888; }
+td{ padding-left: 2em; padding-right:2em }
+</style>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>East (ft)</th>
+      <th>West (ft)</th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>09/13/2018</td>
+      <td>581.94</td>
+      <td><strong>582.66</strong></td>
+      <td>West is higher</td>
+    </tr>
+    <tr>
+      <td>09/14/2018</td>
+      <td>581.8</td>
+      <td><strong>582.32</strong></td>
+      <td>West is higher</td>
+    </tr>
+    <tr>
+      <td>09/15/2018</td>
+      <td>581.62</td>
+      <td><strong>581.94</strong></td>
+      <td>West is higher</td>
+    </tr>
+    <tr>
+      <td>09/16/2018</td>
+      <td>581.42</td>
+      <td><strong>581.55</strong></td>
+      <td>West is higher</td>
+    </tr>
+    <tr>
+      <td>09/17/2018</td>
+      <td>581.16</td>
+      <td><strong>581.2</strong></td>
+      <td>West is higher</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="task-d-reverse-chronological-order">Task D. Reverse chronological order<a class="anchorjs-link " href="#task-d-reverse-chronological-order" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p><img src="Lab%203_files/EBCioqG.jpg" alt="[Turn Back Time Illustration]" class="centered"></p>
+
+<p>Write a program <code class="language-plaintext highlighter-rouge">reverse-order.cpp</code> which asks the user to input two dates (earlier date then later date).
+The program should report the <strong>West basin elevation</strong> for all days in the interval in the reverse chronological order (from the later date to the earlier).</p>
+
+<h3 id="example-2">Example:<a class="anchorjs-link " href="#example-2" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./reverse-order
+Enter earlier date: 05/29/2018
+Enter later date: 06/02/2018 
+
+06/02/2018  590.32 ft
+06/01/2018  590.26 ft
+05/31/2018  590.24 ft
+05/30/2018  590.23 ft
+05/29/2018  590.22 ft
+</code></pre></div></div>
+
+<p><strong>Hint:</strong> If for the previous tasks you did not use 
+arrays, here you really have to read the data into arrays first, and 
+only then report them in the 
+required order.</p>
+
+<p><br></p>
+
+
+      
+    </div>
+    <script src="Lab%203_files/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+    
+  
+
+</body></html>
