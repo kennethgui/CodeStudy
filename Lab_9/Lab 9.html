@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title> LAB 9 </title>
+<meta name="generator" content="Jekyll v3.7.3">
+<meta property="og:title" content="Genady Maryash, Hunter College">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://maryash.github.io/">
+<meta property="og:url" content="https://maryash.github.io/">
+<meta property="og:site_name" content="maryash.github.io">
+<script type="application/ld+json">
+{"name":"maryash.github.io","@type":"WebSite","url":"https://maryash.github.io/","headline":"Genady Maryash, Hunter College","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <style class="anchorjs"></style><link href="Lab%209_files/css.css" rel="stylesheet"> 
+
+    <!-- MathJax -->
+    <script type="text/javascript" async="" src="Lab%209_files/MathJax.js">
+    </script>
+
+<!--   <link crossorigin="anonymous" media="all" integrity="sha512-Z0JAar9+DkI1NjGVdZr3GivARUgJtA0o2eHlTv7Ou2gshR5awWVf8QGsq11Ns9ZxQLEs+G5/SuARmvpOLMzulw==" rel="stylesheet" href="https://assets-cdn.github.com/assets/frameworks-95aff0b550d3fe338b645a4deebdcb1b.css" />
+    --> 
+<!--   <link crossorigin="anonymous" media="all" integrity="sha512-yv+kWn8ewbavFKfvLZifQplJ0chJ6H894rDwGVvn0LtaG80VxAQmPt8pRMMOSlGNSiPwZEDSVzZjyOOiVe0eyA==" rel="stylesheet" href="https://assets-cdn.github.com/assets/github-37504d684728c80db863d719b4ac6781.css" />
+    --> 
+<link rel="stylesheet" href="Lab%209_files/style.css">
+  <style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">.mjx-chtml {display: inline-block; line-height: 0; text-indent: 0; text-align: left; text-transform: none; font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; letter-spacing: normal; word-wrap: normal; word-spacing: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; margin: 0; padding: 1px 0}
+.MJXc-display {display: block; text-align: center; margin: 1em 0; padding: 0}
+.mjx-chtml[tabindex]:focus, body :focus .mjx-chtml[tabindex] {display: inline-table}
+.mjx-full-width {text-align: center; display: table-cell!important; width: 10000em}
+.mjx-math {display: inline-block; border-collapse: separate; border-spacing: 0}
+.mjx-math * {display: inline-block; -webkit-box-sizing: content-box!important; -moz-box-sizing: content-box!important; box-sizing: content-box!important; text-align: left}
+.mjx-numerator {display: block; text-align: center}
+.mjx-denominator {display: block; text-align: center}
+.MJXc-stacked {height: 0; position: relative}
+.MJXc-stacked > * {position: absolute}
+.MJXc-bevelled > * {display: inline-block}
+.mjx-stack {display: inline-block}
+.mjx-op {display: block}
+.mjx-under {display: table-cell}
+.mjx-over {display: block}
+.mjx-over > * {padding-left: 0px!important; padding-right: 0px!important}
+.mjx-under > * {padding-left: 0px!important; padding-right: 0px!important}
+.mjx-stack > .mjx-sup {display: block}
+.mjx-stack > .mjx-sub {display: block}
+.mjx-prestack > .mjx-presup {display: block}
+.mjx-prestack > .mjx-presub {display: block}
+.mjx-delim-h > .mjx-char {display: inline-block}
+.mjx-surd {vertical-align: top}
+.mjx-mphantom * {visibility: hidden}
+.mjx-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 2px 3px; font-style: normal; font-size: 90%}
+.mjx-annotation-xml {line-height: normal}
+.mjx-menclose > svg {fill: none; stroke: currentColor}
+.mjx-mtr {display: table-row}
+.mjx-mlabeledtr {display: table-row}
+.mjx-mtd {display: table-cell; text-align: center}
+.mjx-label {display: table-row}
+.mjx-box {display: inline-block}
+.mjx-block {display: block}
+.mjx-span {display: inline}
+.mjx-char {display: block; white-space: pre}
+.mjx-itable {display: inline-table; width: auto}
+.mjx-row {display: table-row}
+.mjx-cell {display: table-cell}
+.mjx-table {display: table; width: 100%}
+.mjx-line {display: block; height: 0}
+.mjx-strut {width: 0; padding-top: 1em}
+.mjx-vsize {width: 0}
+.MJXc-space1 {margin-left: .167em}
+.MJXc-space2 {margin-left: .222em}
+.MJXc-space3 {margin-left: .278em}
+.mjx-chartest {display: block; visibility: hidden; position: absolute; top: 0; line-height: normal; font-size: 500%}
+.mjx-chartest .mjx-char {display: inline}
+.mjx-chartest .mjx-box {padding-top: 1000px}
+.MJXc-processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MJXc-processed {display: none}
+.mjx-test {display: block; font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow: hidden; height: 1px}
+.mjx-ex-box-test {position: absolute; overflow: hidden; width: 1px; height: 60ex}
+.mjx-line-box-test {display: table!important}
+.mjx-line-box-test span {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+#MathJax_CHTML_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.mjx-chtml .mjx-noError {line-height: 1.2; vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+.MJXc-TeX-unknown-R {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: normal; font-weight: normal}
+.MJXc-TeX-unknown-I {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: italic; font-weight: normal}
+.MJXc-TeX-unknown-B {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: normal; font-weight: bold}
+.MJXc-TeX-unknown-BI {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: italic; font-weight: bold}
+.MJXc-TeX-ams-R {font-family: MJXc-TeX-ams-R,MJXc-TeX-ams-Rw}
+.MJXc-TeX-cal-B {font-family: MJXc-TeX-cal-B,MJXc-TeX-cal-Bx,MJXc-TeX-cal-Bw}
+.MJXc-TeX-frak-R {font-family: MJXc-TeX-frak-R,MJXc-TeX-frak-Rw}
+.MJXc-TeX-frak-B {font-family: MJXc-TeX-frak-B,MJXc-TeX-frak-Bx,MJXc-TeX-frak-Bw}
+.MJXc-TeX-math-BI {font-family: MJXc-TeX-math-BI,MJXc-TeX-math-BIx,MJXc-TeX-math-BIw}
+.MJXc-TeX-sans-R {font-family: MJXc-TeX-sans-R,MJXc-TeX-sans-Rw}
+.MJXc-TeX-sans-B {font-family: MJXc-TeX-sans-B,MJXc-TeX-sans-Bx,MJXc-TeX-sans-Bw}
+.MJXc-TeX-sans-I {font-family: MJXc-TeX-sans-I,MJXc-TeX-sans-Ix,MJXc-TeX-sans-Iw}
+.MJXc-TeX-script-R {font-family: MJXc-TeX-script-R,MJXc-TeX-script-Rw}
+.MJXc-TeX-type-R {font-family: MJXc-TeX-type-R,MJXc-TeX-type-Rw}
+.MJXc-TeX-cal-R {font-family: MJXc-TeX-cal-R,MJXc-TeX-cal-Rw}
+.MJXc-TeX-main-B {font-family: MJXc-TeX-main-B,MJXc-TeX-main-Bx,MJXc-TeX-main-Bw}
+.MJXc-TeX-main-I {font-family: MJXc-TeX-main-I,MJXc-TeX-main-Ix,MJXc-TeX-main-Iw}
+.MJXc-TeX-main-R {font-family: MJXc-TeX-main-R,MJXc-TeX-main-Rw}
+.MJXc-TeX-math-I {font-family: MJXc-TeX-math-I,MJXc-TeX-math-Ix,MJXc-TeX-math-Iw}
+.MJXc-TeX-size1-R {font-family: MJXc-TeX-size1-R,MJXc-TeX-size1-Rw}
+.MJXc-TeX-size2-R {font-family: MJXc-TeX-size2-R,MJXc-TeX-size2-Rw}
+.MJXc-TeX-size3-R {font-family: MJXc-TeX-size3-R,MJXc-TeX-size3-Rw}
+.MJXc-TeX-size4-R {font-family: MJXc-TeX-size4-R,MJXc-TeX-size4-Rw}
+.MJXc-TeX-vec-R {font-family: MJXc-TeX-vec-R,MJXc-TeX-vec-Rw}
+.MJXc-TeX-vec-B {font-family: MJXc-TeX-vec-B,MJXc-TeX-vec-Bx,MJXc-TeX-vec-Bw}
+@font-face {font-family: MJXc-TeX-ams-R; src: local('MathJax_AMS'), local('MathJax_AMS-Regular')}
+@font-face {font-family: MJXc-TeX-ams-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/eot/MathJax_AMS-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_AMS-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/otf/MathJax_AMS-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-cal-B; src: local('MathJax_Caligraphic Bold'), local('MathJax_Caligraphic-Bold')}
+@font-face {font-family: MJXc-TeX-cal-Bx; src: local('MathJax_Caligraphic'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-cal-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-frak-R; src: local('MathJax_Fraktur'), local('MathJax_Fraktur-Regular')}
+@font-face {font-family: MJXc-TeX-frak-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-frak-B; src: local('MathJax_Fraktur Bold'), local('MathJax_Fraktur-Bold')}
+@font-face {font-family: MJXc-TeX-frak-Bx; src: local('MathJax_Fraktur'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-frak-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-math-BI; src: local('MathJax_Math BoldItalic'), local('MathJax_Math-BoldItalic')}
+@font-face {font-family: MJXc-TeX-math-BIx; src: local('MathJax_Math'); font-weight: bold; font-style: italic}
+@font-face {font-family: MJXc-TeX-math-BIw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/eot/MathJax_Math-BoldItalic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Math-BoldItalic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/otf/MathJax_Math-BoldItalic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-R; src: local('MathJax_SansSerif'), local('MathJax_SansSerif-Regular')}
+@font-face {font-family: MJXc-TeX-sans-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-B; src: local('MathJax_SansSerif Bold'), local('MathJax_SansSerif-Bold')}
+@font-face {font-family: MJXc-TeX-sans-Bx; src: local('MathJax_SansSerif'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-sans-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-I; src: local('MathJax_SansSerif Italic'), local('MathJax_SansSerif-Italic')}
+@font-face {font-family: MJXc-TeX-sans-Ix; src: local('MathJax_SansSerif'); font-style: italic}
+@font-face {font-family: MJXc-TeX-sans-Iw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Italic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Italic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-script-R; src: local('MathJax_Script'), local('MathJax_Script-Regular')}
+@font-face {font-family: MJXc-TeX-script-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/eot/MathJax_Script-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Script-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-type-R; src: local('MathJax_Typewriter'), local('MathJax_Typewriter-Regular')}
+@font-face {font-family: MJXc-TeX-type-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/eot/MathJax_Typewriter-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Typewriter-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/otf/MathJax_Typewriter-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-cal-R; src: local('MathJax_Caligraphic'), local('MathJax_Caligraphic-Regular')}
+@font-face {font-family: MJXc-TeX-cal-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-B; src: local('MathJax_Main Bold'), local('MathJax_Main-Bold')}
+@font-face {font-family: MJXc-TeX-main-Bx; src: local('MathJax_Main'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-main-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/eot/MathJax_Main-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-I; src: local('MathJax_Main Italic'), local('MathJax_Main-Italic')}
+@font-face {font-family: MJXc-TeX-main-Ix; src: local('MathJax_Main'); font-style: italic}
+@font-face {font-family: MJXc-TeX-main-Iw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/eot/MathJax_Main-Italic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-R; src: local('MathJax_Main'), local('MathJax_Main-Regular')}
+@font-face {font-family: MJXc-TeX-main-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/eot/MathJax_Main-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-math-I; src: local('MathJax_Math Italic'), local('MathJax_Math-Italic')}
+@font-face {font-family: MJXc-TeX-math-Ix; src: local('MathJax_Math'); font-style: italic}
+@font-face {font-family: MJXc-TeX-math-Iw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/eot/MathJax_Math-Italic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size1-R; src: local('MathJax_Size1'), local('MathJax_Size1-Regular')}
+@font-face {font-family: MJXc-TeX-size1-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/eot/MathJax_Size1-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size2-R; src: local('MathJax_Size2'), local('MathJax_Size2-Regular')}
+@font-face {font-family: MJXc-TeX-size2-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/eot/MathJax_Size2-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size3-R; src: local('MathJax_Size3'), local('MathJax_Size3-Regular')}
+@font-face {font-family: MJXc-TeX-size3-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/eot/MathJax_Size3-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size4-R; src: local('MathJax_Size4'), local('MathJax_Size4-Regular')}
+@font-face {font-family: MJXc-TeX-size4-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-vec-R; src: local('MathJax_Vector'), local('MathJax_Vector-Regular')}
+@font-face {font-family: MJXc-TeX-vec-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/eot/MathJax_Vector-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Vector-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/otf/MathJax_Vector-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-vec-B; src: local('MathJax_Vector Bold'), local('MathJax_Vector-Bold')}
+@font-face {font-family: MJXc-TeX-vec-Bx; src: local('MathJax_Vector'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-vec-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/eot/MathJax_Vector-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Vector-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/otf/MathJax_Vector-Bold.otf') format('opentype')}
+</style></head>
+  <body><div id="MathJax_Message" style="display: none;"></div>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1 id="lab-9-pointers">Lab 9. Pointers</h1>
+<p><img src="Lab%209_files/images.png" alt="" class="centered"></p>
+<h2 id="introduction">Introduction<a class="anchorjs-link " href="#introduction" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p><strong>Pointer variables</strong> are a feature of systems programming languages, such as C++ or C,
+that are able to store the <strong>memory addresses</strong> of other variables and objects used by the program.
+Knowing the address of an object can very convenient. 
+You can freely pass it around into functions, if the function needs to operate on that object.</p>
+
+<p>The usefulness of addresses is pretty obvious in real life: the <strong>Hunter College campus</strong> is a huge multi-building
+complex. It is really big. So big that you cannot move it around, and you definitely cannot put the whole <strong>Hunter College campus</strong> in your pocket.</p>
+
+<p>On the other hand, its address, <code class="language-plaintext highlighter-rouge">695 Park Ave, New York, NY 10065</code>,
+ is much smaller than the building itself, 
+you can write it down on a piece of paper to pass it around to other 
+people or to keep it in your notes without taking much space.</p>
+
+<p>So, a pointer variable is pretty much like this piece of paper with the address. It takes a little bit of memory 
+(several bytes, the exact number can vary depending on your system and the type of pointer),
+and lets you refer to other (potentially much bigger) objects.</p>
+
+<h3 id="operators--and--">Operators <code class="language-plaintext highlighter-rouge">&amp;</code> and <code class="language-plaintext highlighter-rouge">*</code> :<a class="anchorjs-link " href="#operators--and--" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<p><strong><code class="language-plaintext highlighter-rouge">&amp;x</code></strong> is the address of the object <code class="language-plaintext highlighter-rouge">x</code>  <br>
+<strong><code class="language-plaintext highlighter-rouge">*p</code></strong> is the object at the address pointed by <code class="language-plaintext highlighter-rouge">p</code></p>
+
+<h3 id="action-of-these-operators-in-the-hunter-campus-analogy">Action of these operators in the Hunter campus analogy:<a class="anchorjs-link " href="#action-of-these-operators-in-the-hunter-campus-analogy" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<p><img src="Lab%209_files/dpgnHOG.png" alt="" class="centered"></p>
+
+<h3 id="example">Example:<a class="anchorjs-link " href="#example" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">string</span> <span class="n">book</span> <span class="o">=</span> <span class="s">"In a hole in the ground there lived a hobbit..."</span><span class="p">;</span>
+
+<span class="n">string</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>   <span class="c1">// declaring a pointer.</span>
+<span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">book</span><span class="p">;</span>   <span class="c1">// storing the address of 'book' in the pointer</span>
+
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span> <span class="c1">// dereferecing the pointer for printing </span>
+                    <span class="c1">// the book on the screen</span>
+
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>  <span class="c1">// However, if you print the pointer itself,</span>
+                    <span class="c1">// you will see a hexadecimal code like:</span>
+                    <span class="c1">// 0x0A274B3A</span>
+</code></pre></div></div>
+
+<h2 id="task-a-length-and-distance-in-3d-space">Task A. Length and distance in 3D space<a class="anchorjs-link " href="#task-a-length-and-distance-in-3d-space" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>A <strong>point</strong> in 3D space can be represented using three coordinates.
+In Cartesian coordinate system these coordinates are called <em>(x,y,z)</em>, describing the position of the point 
+along the three orthogonal axes:</p>
+
+<p><img src="Lab%209_files/S1jMGq4.png" alt="" class="centered"></p>
+
+<p>The <strong>origin</strong> of the coordinate system is denoted by <em>O</em> and has coordinates <em>(0,0,0)</em>.</p>
+
+<p>A point <em>P=(x,y,z)</em>, together with the origin, defines a 3D <strong>vector</strong> <em>OP</em>. The distance from <em>O</em> to <em>P</em>, or in other words, 
+the length of the vector <em>OP</em> can be computed using the euclidean distance formula:</p>
+
+<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-1-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" style="font-size: 117%; text-align: center; position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;&gt;&lt;mtext&gt;Length of the vector&amp;#xA0;&lt;/mtext&gt;&lt;mi&gt;O&lt;/mi&gt;&lt;mi&gt;P&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msqrt&gt;&lt;msup&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;msup&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;msup&gt;&lt;mi&gt;z&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;/msqrt&gt;&lt;/math&gt;" role="presentation"><span id="MJXc-Node-1" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-2" class="mjx-mrow"><span id="MJXc-Node-3" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.43em; padding-bottom: 0.537em;">Length of the vector&nbsp;</span></span><span id="MJXc-Node-4" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.483em; padding-bottom: 0.323em;">O</span></span><span id="MJXc-Node-5" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.483em; padding-bottom: 0.27em; padding-right: 0.109em;">P</span></span><span id="MJXc-Node-6" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.056em; padding-bottom: 0.323em;">=</span></span><span id="MJXc-Node-7" class="mjx-msqrt MJXc-space3"><span class="mjx-box" style="padding-top: 0.045em;"><span class="mjx-surd"><span class="mjx-char MJXc-TeX-size2-R" style="padding-top: 0.911em; padding-bottom: 0.911em;">√</span></span><span class="mjx-box" style="padding-top: 0.274em; border-top: 1.4px solid;"><span id="MJXc-Node-8" class="mjx-mrow"><span id="MJXc-Node-9" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-10" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.216em; padding-bottom: 0.27em;">x</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.584em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-11" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.377em; padding-bottom: 0.323em;">2</span></span></span></span><span id="MJXc-Node-12" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.323em; padding-bottom: 0.43em;">+</span></span><span id="MJXc-Node-13" class="mjx-msubsup MJXc-space2"><span class="mjx-base" style="margin-right: -0.006em;"><span id="MJXc-Node-14" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.216em; padding-bottom: 0.483em; padding-right: 0.006em;">y</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.584em; padding-left: 0.082em; padding-right: 0.071em;"><span id="MJXc-Node-15" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.377em; padding-bottom: 0.323em;">2</span></span></span></span><span id="MJXc-Node-16" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.323em; padding-bottom: 0.43em;">+</span></span><span id="MJXc-Node-17" class="mjx-msubsup MJXc-space2"><span class="mjx-base" style="margin-right: -0.003em;"><span id="MJXc-Node-18" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.216em; padding-bottom: 0.27em; padding-right: 0.003em;">z</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.584em; padding-left: 0.076em; padding-right: 0.071em;"><span id="MJXc-Node-19" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.377em; padding-bottom: 0.323em;">2</span></span></span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtext>Length of the vector&nbsp;</mtext><mi>O</mi><mi>P</mi><mo>=</mo><msqrt><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup></msqrt></math></span></span></span><script type="math/tex; mode=display" id="MathJax-Element-1">\text{Length of the vector } OP = \sqrt{x^2 + y^2 + z^2}</script>
+
+<p>We are provided with a class type that represents coordinates in 3D:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Coord3D</span> <span class="p">{</span>
+<span class="nl">public:</span>
+    <span class="kt">double</span> <span class="n">x</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">y</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">z</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>Write a program <code class="language-plaintext highlighter-rouge">3d-space.cpp</code>, in which you define  a function <code class="language-plaintext highlighter-rouge">length()</code> that receives the coordinates of a point <em>P</em> passed as a pointer,
+and computes the distance from the origin to the point <em>P</em>:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">double</span> <span class="nf">length</span><span class="p">(</span><span class="n">Coord3D</span> <span class="o">*</span><span class="n">p</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>A usage example:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">Coord3D</span> <span class="n">pointP</span> <span class="o">=</span> <span class="p">{</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">};</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">length</span><span class="p">(</span><span class="o">&amp;</span><span class="n">pointP</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span> <span class="c1">// would print 37.4166</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Notice that we pass the memory address <code class="language-plaintext highlighter-rouge">&amp;pointP</code>, where the object of this class is located. The function should <em>dereference</em> this address
+to get the corresponding fields <code class="language-plaintext highlighter-rouge">x</code>, <code class="language-plaintext highlighter-rouge">y</code>, and <code class="language-plaintext highlighter-rouge">z</code> for computing the length.</p>
+
+<h2 id="task-b-farther-from-the-origin">Task B. Farther from the origin?<a class="anchorjs-link " href="#task-b-farther-from-the-origin" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>In the same file <code class="language-plaintext highlighter-rouge">3d-space.cpp</code>, add a function</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Coord3D</span> <span class="o">*</span> <span class="nf">fartherFromOrigin</span><span class="p">(</span><span class="n">Coord3D</span> <span class="o">*</span><span class="n">p1</span><span class="p">,</span> <span class="n">Coord3D</span> <span class="o">*</span><span class="n">p2</span><span class="p">);</span>
+</code></pre></div></div>
+<p>Which receives the coordinates of two points (passed as pointers), 
+and returns the pointer of the point that is farther away from the 
+origin.</p>
+
+<p>A usage example:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">Coord3D</span> <span class="n">pointP</span> <span class="o">=</span> <span class="p">{</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">};</span>
+    <span class="n">Coord3D</span> <span class="n">pointQ</span> <span class="o">=</span> <span class="p">{</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="o">-</span><span class="mi">22</span><span class="p">};</span>
+
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Address of P: "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">pointP</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Address of Q: "</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">pointQ</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+
+    <span class="n">Coord3D</span> <span class="o">*</span> <span class="n">ans</span> <span class="o">=</span> <span class="n">fartherFromOrigin</span><span class="p">(</span><span class="o">&amp;</span><span class="n">pointP</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">pointQ</span><span class="p">);</span>
+   
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"ans = "</span> <span class="o">&lt;&lt;</span> <span class="n">ans</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span> <span class="c1">// So which point is farther?</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>When testing your code, look at the reported address of the answer <code class="language-plaintext highlighter-rouge">ans</code> and <strong>determine whether it reports P or Q</strong>.
+You can use a calculator or <a href="http://www.wolframalpha.com/input/?i=sqrt(10*10+%2B+20*20+%2B+30*30)">WolframAlpha</a>) to check the numbers.
+Try other coordinates of points P and Q to confirm that the program works.</p>
+
+<h2 id="task-c-velocity-and-moving-objects">Task C. Velocity and moving objects<a class="anchorjs-link " href="#task-c-velocity-and-moving-objects" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>Let’s consider an object moving in 3D space. We already know how to describe its position. 
+(We will be assuming metric system, thus distances will be implicitly measured in meters and time in seconds.)</p>
+
+<p>The object’s <strong>velocity</strong> can be represented in the same 3D coordinate system
+as its displacement per second in the coordinates x, y, and z:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Coord3D</span> <span class="n">vel</span> <span class="o">=</span> <span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">};</span> <span class="c1">// x, y, z components of the velocity</span>
+</code></pre></div></div>
+
+<p>When moving at constant velocity <code class="language-plaintext highlighter-rouge">vel</code> , the object’s new position after the elapsed time <code class="language-plaintext highlighter-rouge">dt</code> can be computed as</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x' = x + vel.x * dt;
+
+y' = y + vel.x * dt;
+
+z' = z + vel.x * dt;
+</code></pre></div></div>
+<p>Let’s implement it. In the same program, write a function</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">move</span><span class="p">(</span><span class="n">Coord3D</span> <span class="o">*</span><span class="n">ppos</span><span class="p">,</span> <span class="n">Coord3D</span> <span class="o">*</span><span class="n">pvel</span><span class="p">,</span> <span class="kt">double</span> <span class="n">dt</span><span class="p">);</span>
+</code></pre></div></div>
+<p>which gets the position and the velocity of an object and has to compute object’s new coordinates after the time interval <code class="language-plaintext highlighter-rouge">dt</code>.
+The function does not return any values, instead, it should <strong>update</strong> the object’s position <code class="language-plaintext highlighter-rouge">ppos</code> with its new position coordinates.</p>
+
+<p>Because we pass the coordinates <code class="language-plaintext highlighter-rouge">Coord3D * ppos</code> as a <strong>pointer</strong>, 
+all changes to the fields of the class pointed by <code class="language-plaintext highlighter-rouge">ppos</code>, will affect the original object you pass into the function, not its local copy. 
+Example:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">Coord3D</span> <span class="n">pos</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">100.0</span><span class="p">};</span>
+    <span class="n">Coord3D</span> <span class="n">vel</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">};</span>
+
+    <span class="n">move</span><span class="p">(</span><span class="o">&amp;</span><span class="n">pos</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">vel</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">);</span> <span class="c1">// object pos gets changed</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">pos</span><span class="p">.</span><span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span> <span class="o">&lt;&lt;</span> <span class="n">pos</span><span class="p">.</span><span class="n">y</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span> <span class="o">&lt;&lt;</span> <span class="n">pos</span><span class="p">.</span><span class="n">z</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">// prints: 2 -10 100.4</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Notice that we are not passing anything by reference: We pass the <em>address</em>, <code class="language-plaintext highlighter-rouge">&amp;pos</code>, and the function manipulates the original object <code class="language-plaintext highlighter-rouge">pos</code>,
+because it knows its address in the memory.</p>
+
+<h2 id="on-dynamic-memory-allocation">On dynamic memory allocation<a class="anchorjs-link " href="#on-dynamic-memory-allocation" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>Normally, any variable “lives” only within the block where it is 
+declared, and disappears once the program execution leaves this scope.
+We know that already, right?</p>
+
+<p>This memory management is called automatic, the program <strong>allocates memory for each variable</strong> when it enters the scope of the variable, and
+<strong>deletes that memory when leaving that scope</strong>.</p>
+
+<h3 id="a-problem-with-automatic-memory-allocation">A problem with automatic memory allocation:<a class="anchorjs-link " href="#a-problem-with-automatic-memory-allocation" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>The following function that’s supposed to create a poem and return its memory address, will not work (reliably):</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">string</span> <span class="o">*</span> <span class="nf">createAPoem</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">string</span> <span class="n">poem</span> <span class="o">=</span>    <span class="c1">// making a string with a poem </span>
+      <span class="s">"   Said Hamlet to Ophelia,            </span><span class="se">\n</span><span class="s">"</span>
+      <span class="s">"   I'll draw a sketch of thee,        </span><span class="se">\n</span><span class="s">"</span>
+      <span class="s">"   What kind of pencil shall I use?   </span><span class="se">\n</span><span class="s">"</span>
+      <span class="s">"   2B or not 2B?                      </span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+
+    <span class="k">return</span> <span class="o">&amp;</span><span class="n">poem</span><span class="p">;</span>    <span class="c1">// and returning its address </span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Since the variable <code class="language-plaintext highlighter-rouge">poem</code> exists only locally inside the function, after exiting the function, 
+the <strong>memory allocated for this string gets claimed and freed by the program</strong>.
+Even though we <strong>returned the address where the poem was</strong>, after the function exits, that address 
+may be taken and used by some other part of your program,
+the poem may be easily overwritten by some other value.</p>
+
+<h3 id="the-keyword-new">The keyword <code class="language-plaintext highlighter-rouge">new</code><a class="anchorjs-link " href="#the-keyword-new" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<div style="margin-left:7em; margin-right:7em;">
+<b>Question(?):</b>
+<br>
+Can we allocate a chunk of memory for the poem so that it would <b>remain persistent</b> and would not be claimed by the program
+after the function exits? 
+</div>
+
+<p>Yes we can, using the keyword <strong><code class="language-plaintext highlighter-rouge">new</code></strong>:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">string</span> <span class="o">*</span> <span class="nf">createAPoemDynamically</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">string</span> <span class="o">*</span><span class="n">ppoem</span><span class="p">;</span>      <span class="c1">// declare a pointer to string</span>
+                        <span class="c1">// (it will store the address)</span>
+
+    <span class="n">ppoem</span> <span class="o">=</span> <span class="k">new</span> <span class="n">string</span><span class="p">;</span> <span class="c1">// &lt;-- DYNAMICALLY ALLOCATE MEMORY</span>
+                        <span class="c1">//     for a poem string and</span>
+                        <span class="c1">//     store its address in the pointer</span>
+
+    <span class="o">*</span><span class="n">ppoem</span> <span class="o">=</span>            <span class="c1">// put a poem there</span>
+      <span class="s">"   Those             </span><span class="se">\n</span><span class="s">"</span>
+      <span class="s">"   who can write     </span><span class="se">\n</span><span class="s">"</span>
+      <span class="s">"   have a            </span><span class="se">\n</span><span class="s">"</span>
+      <span class="s">"   lot to            </span><span class="se">\n</span><span class="s">"</span>
+      <span class="s">"   learn from those  </span><span class="se">\n</span><span class="s">"</span>
+      <span class="s">"   bright            </span><span class="se">\n</span><span class="s">"</span>
+      <span class="s">"   enough            </span><span class="se">\n</span><span class="s">"</span>
+      <span class="s">"   not to.           </span><span class="se">\n</span><span class="s">"</span><span class="p">;</span> 
+
+    <span class="k">return</span> <span class="n">ppoem</span><span class="p">;</span>       <span class="c1">// return the address where the poem is</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>The address of a dynamically allocated memory can be passed around, 
+returned from a function, or stored in another variable, etc.</p>
+
+<p>The dynamically allocated memory will remain persistently in the computer memory throughout the program execution:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">string</span> <span class="o">*</span> <span class="n">p</span><span class="p">;</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">createAPoemDynamically</span><span class="p">();</span>
+    <span class="c1">// The memory at the address p still stores the poem we</span>
+    <span class="c1">// put in it during the function call. Neat!</span>
+
+    <span class="c1">// At any later moment, you can print it out:</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>
+
+    <span class="c1">// You can also save the address into another pointer variable:</span>
+    <span class="n">string</span> <span class="o">*</span><span class="n">p2</span> <span class="o">=</span> <span class="n">p</span><span class="p">;</span>   <span class="c1">// then both pointers, p and p2,</span>
+                      <span class="c1">// will be pointing to the same poem.</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p2</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="the-keyword-delete">The keyword <code class="language-plaintext highlighter-rouge">delete</code><a class="anchorjs-link " href="#the-keyword-delete" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>Dynamically allocated memory is awesome, it stays persistently and does not depend on the variables and their life times.
+However, it also comes with problems: Once this memory is not needed, it must be manually <strong>released to the system</strong>, otherwise if we only keep
+allocating memory and never giving it back, we may run out of memory eventually.</p>
+
+<p>When we know that we don’t need a dynamically allocated memory anymore, we have to delete it with keyword <code class="language-plaintext highlighter-rouge">delete</code>:</p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// allocate an integer dynamically</span>
+<span class="kt">int</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">;</span>
+<span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="mi">1234</span><span class="p">;</span>          <span class="c1">// we are using it</span>
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span> <span class="c1">//  ''  ''  ''  ''</span>
+
+<span class="c1">// once it's not needed, delete it:</span>
+<span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="allocating-arrays-dynamically-operators-new---and-delete">Allocating arrays dynamically (operators <code class="language-plaintext highlighter-rouge">new ... []</code> and <code class="language-plaintext highlighter-rouge">delete[]</code>)<a class="anchorjs-link " href="#allocating-arrays-dynamically-operators-new---and-delete" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>Dynamic memory allocation of arrays uses special operators with 
+square brackets, we have to specify how many elements we want to get:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="c1">// how many elements we need</span>
+<span class="c1">// Getting memory</span>
+<span class="n">string</span> <span class="o">*</span> <span class="n">lines</span> <span class="o">=</span> <span class="k">new</span> <span class="n">string</span><span class="p">[</span><span class="n">n</span><span class="p">];</span> <span class="c1">// array of 100 strings</span>
+
+<span class="n">lines</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s">"Roses are red"</span><span class="p">;</span>
+<span class="n">lines</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s">"Violets are blue"</span><span class="p">;</span>
+
+<span class="c1">// ... Keep using the array ...</span>
+
+<span class="c1">// Don't need it anymore - delete</span>
+<span class="k">delete</span><span class="p">[]</span> <span class="n">lines</span><span class="p">;</span>
+</code></pre></div></div>
+<p>When it is not needed, use operator <code class="language-plaintext highlighter-rouge">delete[]</code> to release the memory.</p>
+
+<h2 id="task-d-fix-the-program-so-that-it-does-not-crash-your-computer">Task D. Fix the program so that it does not crash your computer:<a class="anchorjs-link " href="#task-d-fix-the-program-so-that-it-does-not-crash-your-computer" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>You are provided with the following program <code class="language-plaintext highlighter-rouge">poem.cpp</code>. All is good, and the memory is allocated dynamically,
+but it crashes your computer, because it runs out of memory really quickly:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;iostream&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="n">string</span> <span class="o">*</span> <span class="nf">createAPoemDynamically</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">string</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="n">string</span><span class="p">;</span>
+    <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="s">"Roses are red, violets are blue"</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">p</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">string</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="n">createAPoemDynamically</span><span class="p">();</span>
+
+        <span class="c1">// assume that the poem p is not needed at this point</span>
+
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Fix this program <code class="language-plaintext highlighter-rouge">poem.cpp</code>. It should still keep creating poems, but all dynamically allocated memory should get deleted when it is not needed.
+(The program can be stopped with <code class="language-plaintext highlighter-rouge">Ctrl+C</code> in the terminal.)</p>
+
+<h2 id="task-e-creating-and-deleting-objects-dynamically">Task E. Creating and deleting objects dynamically<a class="anchorjs-link " href="#task-e-creating-and-deleting-objects-dynamically" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>In the program <code class="language-plaintext highlighter-rouge">3d-space.cpp</code>, add functions that create, delete, and coordinate objects dynamically:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// allocate memory and initialize</span>
+<span class="n">Coord3D</span><span class="o">*</span> <span class="nf">createCoord3D</span><span class="p">(</span><span class="kt">double</span> <span class="n">x</span><span class="p">,</span> <span class="kt">double</span> <span class="n">y</span><span class="p">,</span> <span class="kt">double</span> <span class="n">z</span><span class="p">);</span>
+
+<span class="c1">// free memory</span>
+<span class="kt">void</span> <span class="nf">deleteCoord3D</span><span class="p">(</span><span class="n">Coord3D</span> <span class="o">*</span><span class="n">p</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>A usage example:</p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">double</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Enter position: "</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">x</span> <span class="o">&gt;&gt;</span> <span class="n">y</span> <span class="o">&gt;&gt;</span> <span class="n">z</span><span class="p">;</span>
+    <span class="n">Coord3D</span> <span class="o">*</span><span class="n">ppos</span> <span class="o">=</span> <span class="n">createCoord3D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">);</span>
+    
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Enter velocity: "</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">x</span> <span class="o">&gt;&gt;</span> <span class="n">y</span> <span class="o">&gt;&gt;</span> <span class="n">z</span><span class="p">;</span>
+    <span class="n">Coord3D</span> <span class="o">*</span><span class="n">pvel</span> <span class="o">=</span> <span class="n">createCoord3D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">);</span>
+
+    <span class="n">move</span><span class="p">(</span><span class="n">ppos</span><span class="p">,</span> <span class="n">pvel</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">);</span>
+
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Coordinates after 10 seconds: "</span> 
+         <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="o">*</span><span class="n">ppos</span><span class="p">).</span><span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="o">*</span><span class="n">ppos</span><span class="p">).</span><span class="n">y</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="o">*</span><span class="n">ppos</span><span class="p">).</span><span class="n">z</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+
+    <span class="n">deleteCoord3D</span><span class="p">(</span><span class="n">ppos</span><span class="p">);</span> <span class="c1">// release memory</span>
+    <span class="n">deleteCoord3D</span><span class="p">(</span><span class="n">pvel</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Expected output:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./a.out
+Enter position: 10 20 30
+Enter velocity: 5.5 -1.4 7.77
+Coordinates after 10 seconds: 65 6 107.7
+</code></pre></div></div>
+
+<h2 id="task-f-bonus-task-making-your-own-class-particle">Task F (Bonus Task). Making your own class <code class="language-plaintext highlighter-rouge">Particle</code><a class="anchorjs-link " href="#task-f-bonus-task-making-your-own-class-particle" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p><img src="Lab%209_files/Jb6FVCj.jpg" alt="" class="centered"></p>
+
+<p>Write a new program <code class="language-plaintext highlighter-rouge">particle.cpp</code> (you may copy anything you want from <code class="language-plaintext highlighter-rouge">3d-space.cpp</code> if need be).</p>
+
+<p>The program should declare a new <code class="language-plaintext highlighter-rouge">class Particle</code>, which</p>
+<ul>
+  <li>stores <strong>position</strong> and <strong>velocity</strong> of the particle, and</li>
+  <li>provides the following programming interface:</li>
+</ul>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// dynamically allocate memory for a particle and initialize it</span>
+<span class="n">Particle</span><span class="o">*</span> <span class="nf">createParticle</span><span class="p">(</span><span class="kt">double</span> <span class="n">x</span><span class="p">,</span> <span class="kt">double</span> <span class="n">y</span><span class="p">,</span> <span class="kt">double</span> <span class="n">z</span><span class="p">,</span> 
+                         <span class="kt">double</span> <span class="n">vx</span><span class="p">,</span> <span class="kt">double</span> <span class="n">vy</span><span class="p">,</span> <span class="kt">double</span> <span class="n">vz</span><span class="p">);</span>
+<span class="c1">// set its velocity to (vx, vy, vz)</span>
+<span class="kt">void</span> <span class="nf">setVelocity</span><span class="p">(</span><span class="n">Particle</span> <span class="o">*</span><span class="n">p</span><span class="p">,</span> <span class="kt">double</span> <span class="n">vx</span><span class="p">,</span> <span class="kt">double</span> <span class="n">vy</span><span class="p">,</span> <span class="kt">double</span> <span class="n">vz</span><span class="p">);</span>
+<span class="c1">// get its current position</span>
+<span class="n">Coord3D</span> <span class="nf">getPosition</span><span class="p">(</span><span class="n">Particle</span> <span class="o">*</span><span class="n">p</span><span class="p">);</span>
+<span class="c1">// update particle's position after elapsed time dt</span>
+<span class="kt">void</span> <span class="nf">move</span><span class="p">(</span><span class="n">Particle</span> <span class="o">*</span><span class="n">p</span><span class="p">,</span> <span class="kt">double</span> <span class="n">dt</span><span class="p">);</span>
+<span class="c1">// delete all memory allocated for the particle passed by pointer</span>
+<span class="kt">void</span> <span class="nf">deleteParticle</span><span class="p">(</span><span class="n">Particle</span> <span class="o">*</span><span class="n">p</span><span class="p">);</span>
+</code></pre></div></div>
+<p>Implement these five functions. <code class="language-plaintext highlighter-rouge">deleteParticle</code> must delete all dynamically allocated memory that is created by <code class="language-plaintext highlighter-rouge">createParticle</code> function.</p>
+
+<p>Here is a usage example of the class and its programming interface. It models accelerated motion of a particle,
+which is done by making the velocity of the particle increase on each time step.</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// make new particle</span>
+    <span class="n">Particle</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">createParticle</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">);</span>
+    <span class="kt">double</span> <span class="n">time</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">dt</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">;</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">time</span> <span class="o">&lt;</span> <span class="mf">3.0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// update its velocity</span>
+        <span class="n">setVelocity</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="mf">10.0</span> <span class="o">*</span> <span class="n">time</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">);</span>
+
+        <span class="c1">// move the particle</span>
+        <span class="n">move</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">dt</span><span class="p">);</span>
+        <span class="n">time</span> <span class="o">+=</span> <span class="n">dt</span><span class="p">;</span>
+
+        <span class="c1">// reporting its coordinates</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Time: "</span> <span class="o">&lt;&lt;</span> <span class="n">time</span> <span class="o">&lt;&lt;</span> <span class="s">" </span><span class="se">\t</span><span class="s">"</span><span class="p">;</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Position: "</span>
+             <span class="o">&lt;&lt;</span> <span class="n">getPosition</span><span class="p">(</span><span class="n">p</span><span class="p">).</span><span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="s">", "</span>
+             <span class="o">&lt;&lt;</span> <span class="n">getPosition</span><span class="p">(</span><span class="n">p</span><span class="p">).</span><span class="n">y</span> <span class="o">&lt;&lt;</span> <span class="s">", "</span>
+             <span class="o">&lt;&lt;</span> <span class="n">getPosition</span><span class="p">(</span><span class="n">p</span><span class="p">).</span><span class="n">z</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">// remove the particle, deallocating its memory</span>
+    <span class="n">deleteParticle</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Expected output:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./a.out
+Time: 0.1 	Position: 1, 1.53, 2.01
+Time: 0.2 	Position: 1.1, 1.56, 2.02
+Time: 0.3 	Position: 1.3, 1.59, 2.03
+Time: 0.4 	Position: 1.6, 1.62, 2.04
+Time: 0.5 	Position: 2, 1.65, 2.05
+Time: 0.6 	Position: 2.5, 1.68, 2.06
+Time: 0.7 	Position: 3.1, 1.71, 2.07
+Time: 0.8 	Position: 3.8, 1.74, 2.08
+Time: 0.9 	Position: 4.6, 1.77, 2.09
+Time: 1 	Position: 5.5, 1.8, 2.1
+Time: 1.1 	Position: 6.5, 1.83, 2.11
+Time: 1.2 	Position: 7.6, 1.86, 2.12
+Time: 1.3 	Position: 8.8, 1.89, 2.13
+Time: 1.4 	Position: 10.1, 1.92, 2.14
+Time: 1.5 	Position: 11.5, 1.95, 2.15
+Time: 1.6 	Position: 13, 1.98, 2.16
+Time: 1.7 	Position: 14.6, 2.01, 2.17
+Time: 1.8 	Position: 16.3, 2.04, 2.18
+Time: 1.9 	Position: 18.1, 2.07, 2.19
+Time: 2 	Position: 20, 2.1, 2.2
+Time: 2.1 	Position: 22, 2.13, 2.21
+Time: 2.2 	Position: 24.1, 2.16, 2.22
+Time: 2.3 	Position: 26.3, 2.19, 2.23
+Time: 2.4 	Position: 28.6, 2.22, 2.24
+Time: 2.5 	Position: 31, 2.25, 2.25
+Time: 2.6 	Position: 33.5, 2.28, 2.26
+Time: 2.7 	Position: 36.1, 2.31, 2.27
+Time: 2.8 	Position: 38.8, 2.34, 2.28
+Time: 2.9 	Position: 41.6, 2.37, 2.29
+Time: 3 	Position: 44.5, 2.4, 2.3
+</code></pre></div></div>
+
+<h2 id="how-to-submit-your-programs">How to submit your programs<a class="anchorjs-link " href="#how-to-submit-your-programs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<h3 id="each-program-should-be-submitted-through-gradescope">Each program should be submitted through Gradescope<a class="anchorjs-link " href="#each-program-should-be-submitted-through-gradescope" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>Write separate programs for each part of the assignment. <br>
+Submit only the source code (.cpp) files, not the compiled executables.   <br>
+Each program should start with a comment that contains your name and a short program description, for example:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/*
+Author: your name
+Course: CSCI-136
+Instructor: their name
+Assignment: title, e.g., Lab1A
+
+Here, briefly, at least in one or a few sentences
+describe what the program does.
+*/</span>
+</code></pre></div></div>
+
+<p><br></p>
+
+
+      
+    </div>
+    <script src="Lab%209_files/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+    
+  
+
+</body></html>
